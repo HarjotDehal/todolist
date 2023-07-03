@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block head %}{% endblock %}
+</head>
+
+<!-- this creates a block and template where we insert our code where we put all our other pages and shit -->
+<!-- we can also link our javascript how we did our css. same way. prolly not say stylesheet tho.  -->
+<!-- takes the code from inside here and gives the result of it as a string -->
+
+<body>
+    {% block body %}{% endblock %}
+
+</body>
+</html>
